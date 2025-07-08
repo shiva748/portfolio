@@ -3026,40 +3026,26 @@ form textarea:required:valid {
 }
 
 .avatar__logo {
-  margin-bottom: 1rem;
-}
-@media only screen and (min-width: 1400px) {
-  .avatar__logo {
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo__image {
-  width: 60px;
-  height: 60px;
-}
-.logo__image svg {
-  width: 100%;
-  height: auto;
-}
-@media only screen and (min-width: 1400px) {
-  .logo__image {
-    width: 75px;
-    height: 75px;
-  }
+  margin-bottom: 12px;
 }
 
-.logo__caption {
-  padding-left: 2rem;
-}
 .logo__caption p {
-  font: normal 700 2.8rem/1.06 var(--_font-accent);
-  color: var(--t-bright);
-}
-@media only screen and (min-width: 1400px) {
-  .logo__caption p {
-    font-size: 3.6rem;
-  }
+  font-family: 'Phosphor', 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .avatar__image {
@@ -3071,6 +3057,15 @@ form textarea:required:valid {
 
 .avatar__socials {
   margin-bottom: 1rem;
+}
+
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ------------------------------------------------*/
